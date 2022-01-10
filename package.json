@@ -10,10 +10,17 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@react-native-community/masked-view": "^0.1.11",
+    "@react-navigation/native": "^5.9.8",
+    "@react-navigation/stack": "^5.14.9",
     "axios": "^0.21.1",
     "react": "17.0.2",
     "react-native": "0.66.4",
-    "react-native-image-slider-box": "^1.1.14"
+    "react-native-gesture-handler": "^2.1.0",
+    "react-native-image-slider-box": "^1.1.14",
+    "react-native-reanimated": "^2.3.1",
+    "react-native-safe-area-context": "^3.3.2",
+    "react-native-screens": "^3.10.1"
   },
   "devDependencies": {
     "@babel/core": "^7.16.7",
