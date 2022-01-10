@@ -12,6 +12,7 @@ target 'MoviesApp' do
     :hermes_enabled => false
   )
 
+
   target 'MoviesAppTests' do
     inherit! :complete
     # Pods for testing
