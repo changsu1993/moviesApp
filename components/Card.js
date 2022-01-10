@@ -1,11 +1,11 @@
 import React from 'react';
 import {TouchableOpacity, StyleSheet, Image, Text} from 'react-native';
-import PropsTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 const placeholderImage = require('../assets/images/placeholder.png');
 
 const propTypes = {
-  item: PropsTypes.object,
+  item: PropTypes.object,
 };
 
 class Card extends React.PureComponent {
