@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 import {getMovies} from '../services/services';
 import StarRating from 'react-native-star-rating';
+import dateFormat from 'dateformat';
 import Icon from 'react-native-vector-icons/FontAwesome';
 Icon.loadFont();
 
@@ -65,6 +66,11 @@ const Detail = ({route, navigation}) => {
               maxStars={5}
               rating={movieDetail.vote_average / 2}
             />
+            <Text style={styles.overview}>{movieDetail.overview}</Text>
+            <Text style={styles.release}>
+              {'Release date: ' +
+                dateFormat(movieDetail.release_date, 'mmmm dS, yyyy')}
+            </Text>
           </View>
         </ScrollView>
       )}
@@ -96,6 +102,12 @@ const styles = StyleSheet.create({
   },
   genre: {
     marginRight: 10,
+    fontWeight: 'bold',
+  },
+  overview: {
+    padding: 15,
+  },
+  release: {
     fontWeight: 'bold',
   },
 });
