@@ -7,6 +7,7 @@ import {
   StyleSheet,
 } from 'react-native';
 import PropTypes from 'prop-types';
+import Color from '../theme/Color';
 import Icon from 'react-native-vector-icons/Ionicons';
 Icon.loadFont();
 
@@ -33,7 +34,7 @@ class Navbar extends React.PureComponent {
               onPress={() => {
                 navigation.navigate('Search');
               }}>
-              <Icon name={'search-outline'} size={30} color={'#fff'} />
+              <Icon name={'search-outline'} size={30} color={Color.white} />
             </TouchableOpacity>
           </View>
         ) : (
@@ -42,7 +43,7 @@ class Navbar extends React.PureComponent {
               onPress={() => {
                 navigation.goBack();
               }}>
-              <Icon name={'chevron-back'} size={40} color={'#fff'} />
+              <Icon name={'chevron-back'} size={40} color={Color.lightGray} />
             </TouchableOpacity>
           </View>
         )}
